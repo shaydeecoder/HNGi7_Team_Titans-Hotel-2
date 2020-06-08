@@ -103,9 +103,13 @@ a {
 
 /* Section - Our Facilities */
 
+#facilities {
+  padding-bottom: 3rem;
+}
 
 .facilities-card img {
   height: 400px;
+  object-fit: cover;
 }
 
 .facilities-card .arrow-btn {
@@ -116,6 +120,21 @@ a {
 
 #book-now {
   width: 80%;
+}
+
+/* Section - Footer */
+
+footer nav {
+  border-bottom: 1px #eee solid;
+}
+
+footer nav.navbar {
+  padding: .5rem 0;
+}
+
+.social-media i {
+  padding-left: 1.5rem;
+  color: #fff;
 }
 
 /* Responsiveness */
@@ -139,5 +158,10 @@ a {
     width: 100%;
     text-align: center;
     flex-direction: column;
+  }
+
+  footer div div:last-child {
+    flex-direction: column;
+    text-align: center;
   }
 }
