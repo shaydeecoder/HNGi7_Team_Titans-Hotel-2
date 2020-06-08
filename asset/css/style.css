@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* Utilities */
@@ -40,6 +41,14 @@ a {
 
 .btn-primary {
   background: var(--primary-color);
+}
+
+.dark-gray {
+  background: var(--dark-color);
+}
+
+.light-gray {
+  background: var(--light-dark-color);
 }
 
 
@@ -65,21 +74,16 @@ a {
 
 #about-us {
   background: var(--dark-color);
-  height: 630px;
   padding: 3rem 2rem;
 }
 
 #about-us .about-container,
 #rooms-suites .rooms-container {
   height: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 3rem;
-  align-items: center;
 }
 
 #about-us .about-img {
-  height: 100%;
+  height: 500px;
   background: url('../img/olexandr-ignatov-w72a24brINI-unsplash.jpg') no-repeat center center/cover;
 }
 
@@ -87,12 +91,51 @@ a {
 
 #rooms-suites {
   background-color: var(--light-dark-color);
-  height: 730px;
   padding: 3rem 2rem;
 }
 
 #rooms-suites .rooms-img {
-  height: 100%;
+  height: 500px;
   background: url('../img/rooms-and-suites.jpg') no-repeat center center/cover;
 }
 
+/* Section - Our Facilities */
+
+
+.facilities-card img {
+  height: 400px;
+}
+
+.facilities-card .arrow-btn {
+  width: 40px;
+  height: 40px;
+  margin-top: .5rem;
+}
+
+#book-now {
+  width: 80%;
+}
+
+/* Responsiveness */
+
+@media(max-width: 768px) {
+  #hero .hero-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-img,
+  .rooms-img {
+    margin-top: 4rem;
+  }
+
+  .facility-wrap .col-md-4 {
+    margin-bottom: 2rem;
+  }
+
+  #book-now {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+}
