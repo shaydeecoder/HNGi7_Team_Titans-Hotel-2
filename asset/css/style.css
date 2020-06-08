@@ -104,6 +104,7 @@ a {
 
 .facilities-card img {
   height: 400px;
+  object-fit: cover;
 }
 
 .facilities-card .arrow-btn {
