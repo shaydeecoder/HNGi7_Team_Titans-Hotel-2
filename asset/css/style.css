@@ -51,6 +51,11 @@ a {
   background: var(--light-dark-color);
 }
 
+/* Navigation bar*/
+.nav-item {
+  margin-right: 1.3rem;
+}
+
 
 /* Section - Hero */
 
