@@ -1,0 +1,98 @@
+:root {
+  --primary-color: #514525;
+  /* --secondary-color: ;
+  --light-color: ; */
+  --dark-color: #151412;
+  --light-dark-color: #1E1E1C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display';
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Utilities */
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+}
+
+
+/* Section - Hero */
+
+#hero {
+  background: url('../img/hero.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+#hero .overlay {
+  height: 100vh;
+}
+
+#hero .hero-content {
+  height: 90%;
+  width: 50%;
+  align-items: center;
+}
+
+
+/* Section - About Us */
+
+#about-us {
+  background: var(--dark-color);
+  height: 630px;
+  padding: 3rem 2rem;
+}
+
+#about-us .about-container,
+#rooms-suites .rooms-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+  align-items: center;
+}
+
+#about-us .about-img {
+  height: 100%;
+  background: url('../img/olexandr-ignatov-w72a24brINI-unsplash.jpg') no-repeat center center/cover;
+}
+
+/* Section - Rooms and Suites */
+
+#rooms-suites {
+  background-color: var(--light-dark-color);
+  height: 730px;
+  padding: 3rem 2rem;
+}
+
+#rooms-suites .rooms-img {
+  height: 100%;
+  background: url('../img/rooms-and-suites.jpg') no-repeat center center/cover;
+}
+
