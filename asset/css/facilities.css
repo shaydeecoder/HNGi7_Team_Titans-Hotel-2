@@ -1,0 +1,5 @@
+/* Nav Section */
+#navbar {
+    background: var(--dark-color);
+  padding: 3rem 2rem;
+}
