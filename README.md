@@ -8,6 +8,12 @@ Hotel Template Design
 
 ----------
 
+Images
+https://github.com/Josephatada/Design-Assets-Team--Titan-  
+
+
+----------
+
 
 😎😎😎😎😎😎😎😎😎😎😎😎😎
 
