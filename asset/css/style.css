@@ -78,7 +78,6 @@ a {
 
 
 /* Section - About Us */
-
 #about-us {
   background: var(--dark-color);
   padding: 3rem 2rem;
@@ -127,6 +126,73 @@ a {
   width: 80%;
 }
 
+
+/*Contact Page*/
+/*Main area*/
+.main {
+  padding-top: 40px;
+}
+
+.main .main-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 106px;
+}
+/*Contact form*/
+label {
+  color: #A2A2A2;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+form input {
+  min-width: 100%;
+  border: none;
+  background-color: var(--dark-color);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.67);
+}
+
+.my-form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+form{
+  padding-top: 30px;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+/*company area*/
+.company {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.company h6 {
+  padding: 0;
+  margin: 0;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.company p {
+  padding: 0;
+  margin: 0;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 23px;
+}
+
 /* Section - Footer */
 
 footer nav {
@@ -170,3 +236,4 @@ footer nav.navbar {
     text-align: center;
   }
 }
+
