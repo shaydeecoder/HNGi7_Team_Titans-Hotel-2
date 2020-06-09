@@ -263,6 +263,10 @@ footer nav.navbar {
     text-align: center;
   }
 
+  .social-media a:first-child {
+    padding-left: 0;
+  }
+
   /*CONTACT FORM RESPONSIVENESS*/
   @media (max-width:1000px) {
     .main .main-section {
