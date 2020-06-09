@@ -1,0 +1,47 @@
+/* ROOM DESCRIPTION */
+#room-text .text{
+  height: 35vh;
+  align-items: baseline;
+  margin: 0px 40px;
+}
+
+#room-text .title{
+  font-size: 25px;
+
+}
+#room-text .content{
+  font-size: 16px;
+  text-align: left;
+  margin: 20px 0px;
+}
+
+#room-description{
+  flex-direction: column;
+}
+
+#room-description ul li{
+align-items: center;
+height: 100%;
+}
+#room-description .images{
+  margin-top: 6.67rem;
+}
+
+/* FOOTER */
+#footer{
+  flex-direction: column;
+  align-items: center;
+}
+
+#footer div{
+  display: none;
+}
+
+#footer ul{
+  padding-top: 1px;
+}
+
+#footer2 p{
+  font-size: 15px;
+  margin-top: 30px;
+}

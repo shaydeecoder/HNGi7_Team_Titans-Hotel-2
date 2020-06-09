@@ -13,11 +13,12 @@
 }
 
 body {
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans Pro'; 
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   color: #fff;
+  background: var(--dark-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -58,9 +59,18 @@ a {
   background: var(--light-dark-color);
 }
 
+.mt-7 {
+  margin-top: 5rem;
+}
+
 /* Navigation bar*/
+
 .nav-item {
   margin-right: 1.3rem;
+}
+
+.navbar ul li a{
+  font-family: 'Playfair Display', serif;
 }
 
 
@@ -134,24 +144,151 @@ a {
 
 /* Section - Footer */
 
-footer nav {
-  border-bottom: 1px #eee solid;
+#footer{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  border-bottom: 1px solid #D8D8D8;
 }
 
-footer nav.navbar {
-  padding: .5rem 0;
+#footer ul{
+  display: flex;
+  align-items: center;
+  font-family: 'Playfair Display', serif;
+  list-style: none;
+  /* margin-top: 29px; */
 }
 
-.social-media a {
-  padding-left: 1.5rem;
-  color: #fff;
+#footer ul a{
+  justify-content: space-between;
+  font-family: 'Playfair Display', serif;
+  color: rgba(255, 255, 255, 0.903504);
+  font-size: 12px;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
 }
 
-.social-media a:hover {
-  color: var(--primary-color);
+#footer ul li a:last-of-type{
+  padding-right: 0;
 }
 
-/* Responsiveness */
+#footer div, ul{
+  margin-top: 29px;
+  margin-bottom: 12px;
+}
+
+#footer2{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#footer2 p{
+  margin-top: 26px;
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  color: #F0F0F0;
+  text-align: center;
+  height: 100%;
+}
+
+#footer2 ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  /* margin-top: 29px; */
+}
+
+#footer2 ul a{
+  justify-content: space-between;
+  font-family: 'Playfair Display', serif;
+  color: rgba(255, 255, 255, 0.903504);
+  font-size: 16px;
+  padding: 0.75rem;
+  margin: 18px 4px;
+}
+
+#footer2 ul li a:last-of-type{
+  padding-right: 0;
+}
+
+/* ===================================================================================
+                              Facilities Page 
+=================================================================================== */
+
+/* Facilities page */
+
+.facility-body {
+  background-color: var(--dark-color);
+}
+
+/* Facilities nav Section */
+#facility-navbar {
+  margin: 2rem;
+}
+
+.nav-item {
+  margin-right: 2.3rem;
+  color: fff;
+}
+
+.active {
+  color: #514525 !important;
+}
+
+/* Facilities intro section */
+
+.intro-div {
+  margin: 7% 20%;
+  text-align: center;
+  width: 60%;
+}
+
+.intro-heading {
+  font-family: 'Playfair Display';
+  font-size: 2.5rem;
+
+}
+
+.intro-text {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/*Utility class*/
+.mt-10 {
+  margin-top: 7rem;
+}
+
+.mt-6 {
+  margin-top: 4rem;
+}
+
+.facility-body {
+  background-color: var(--dark-color);
+}
+
+/* Facilities image-gallery */
+
+.watermark{
+  width: 1000px;
+  height: 550px;
+  position: absolute;
+  z-index: -1;
+  background-color: var(--light-dark-color);
+  top: 30px;
+  right: -400px;
+}
+.watermark--2 {
+  position: absolute;
+  right: -90px;
+}
+
+/* ===================================================================================
+                              Responsiveness 
+=================================================================================== */
 
 @media(max-width: 768px) {
   #hero .hero-content {
@@ -185,5 +322,23 @@ footer nav.navbar {
 
   .social-media a:first-child {
     padding-left: 0;
+  }
+
+  #footer{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #footer div{
+    display: none;
+  }
+  
+  #footer ul{
+    padding-top: 1px;
+  }
+  
+  #footer2 p{
+    font-size: 15px;
+    margin-top: 30px;
   }
 }

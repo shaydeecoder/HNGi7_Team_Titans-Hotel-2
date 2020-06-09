@@ -1,0 +1,195 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body{
+  background-color: #151412;
+}
+
+/* NAV BAR */
+
+nav {
+  width: 80%;
+  margin: auto;
+}
+
+.navbar ul li a{
+  font-family: 'Playfair Display', serif;
+}
+
+.nav-item {
+  margin-right: 1.3rem;
+}
+
+/* ROOMS DESCRIPTION */
+
+#room-text .text{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin: auto;
+  max-width: 46.3rem;
+}
+
+#room-text .title{
+  color: #F9F9F9;
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+}
+
+#room-text .content{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 20px;
+  margin-top:1.25rem;
+  line-height: 1.7;
+}
+
+#room-description{
+  display: flex;
+  margin: auto;
+  width: 80%;
+  justify-content: space-between;
+  margin-top: 6.67rem;
+}
+
+#room-description img{
+  width: 308px;
+  height: 346px;
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: left;
+}
+
+#room-description  .room-price{
+  margin-top: 1.25rem;
+  font-size: 1.25rem;
+  color: #ffffff;
+  line-height: 25px;
+}
+
+#room-description  .room-status{
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+#room-description ul{
+  margin-top: 15px;   
+}
+
+#room-description ul li{
+  color: #ffffff;
+  line-height: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-left: 16px;
+ 
+}
+
+#room-description .btn{
+  margin-top: 23px;
+  display: inline-block;
+  background: #514525;
+  color: #ffffff;
+  font-family: 'Playfair Display', serif;
+  padding: 16px 23px 16px 19.35px;
+  min-width: 200px;    
+}
+
+#room-description a .arrow{
+  width: 25px;
+  height: 17px;
+  padding-top: 8px;
+  float: right;
+}
+
+/* FOOTER */
+
+#footer{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 124px;
+  border-bottom: 1px solid #D8D8D8;
+}
+
+#footer ul{
+  display: flex;
+  align-items: center;
+  font-family: 'Playfair Display', serif;
+  list-style: none;
+  /* margin-top: 29px; */
+}
+
+#footer ul a{
+  justify-content: space-between;
+  font-family: 'Playfair Display', serif;
+  color: rgba(255, 255, 255, 0.903504);
+  font-size: 12px;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#footer ul li a:last-of-type{
+  padding-right: 0;
+}
+
+#footer div, ul{
+  margin-top: 29px;
+  margin-bottom: 12px;
+}
+
+#footer2{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#footer2 p{
+  margin-top: 26px;
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  color: #F0F0F0;
+  text-align: center;
+  height: 100%;
+}
+
+#footer2 ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  /* margin-top: 29px; */
+}
+
+#footer2 ul a{
+  justify-content: space-between;
+  font-family: 'Playfair Display', serif;
+  color: rgba(255, 255, 255, 0.903504);
+  font-size: 16px;
+  padding: 0.75rem;
+  margin: 18px 4px;
+}
+
+#footer2 ul li a:last-of-type{
+  padding-right: 0;
+}
+
+
+
+
+
+
+
+
+ 
+
+

@@ -1,0 +1,33 @@
+.form-control {
+  background: var(--dark-color);
+}
+
+input[type=text] {
+  border:none;
+  border-bottom:1px solid darkgrey ;
+}
+
+p a {
+  color:#fff;
+}
+
+p.lead {
+  color:#fff;   
+}
+
+.btn-primary:hover {
+  background-color:#1E1E1C;
+}
+
+p a:hover {
+  color:#514525;
+}
+
+#footer, #footer2 {
+  width: 100%;
+}
+
+#other-details .social-media a {
+  margin-right: 1rem;
+  color: #fff;
+}
