@@ -195,6 +195,8 @@ footer nav.navbar {
   }
 }
 
+/* Facility Page */
+
 /* Facility Body */
 .facility-body {
   background-color: var(--dark-color);
@@ -227,4 +229,28 @@ footer nav.navbar {
 }
 .intro-text {
   color: rgba(255, 255, 255, 0.7);
+}
+
+/*Utility class*/
+.mt-10 {
+  margin-top: 7rem;
+}
+
+.mt-6 {
+  margin-top: 4rem;
+}
+
+/* Facilities image-gallery*/
+.watermark{
+  width: 1000px;
+  height: 550px;
+  position: absolute;
+  z-index: -1;
+  background-color: var(--light-dark-color);
+  top: 30px;
+  right: -400px;
+}
+.watermark--2 {
+  position: absolute;
+  right: -90px;
 }
