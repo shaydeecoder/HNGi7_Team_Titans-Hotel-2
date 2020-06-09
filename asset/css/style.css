@@ -24,6 +24,86 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display';
 }
 
+/*CONTACT PAGE STARTS HERE*/
+/*Main area*/
+.container1 {
+  width: 92%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.main {
+  padding-top: 40px;
+}
+
+.main .main-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 106px;
+}
+/*Contact form*/
+.form-group label {
+  color: #A2A2A2;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 10px;
+}
+
+form input {
+  min-width: 100%;
+  border: none;
+  background-color: var(--dark-color);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.67);
+}
+
+.my-form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+form{
+  padding-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+/*company area*/
+.company {
+  padding-top: 65px;
+  padding-bottom: 60px;
+}
+
+.company-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.company h6 {
+  padding: 0;
+  margin: 0;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.company p {
+  padding: 0;
+  margin: 0;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+/*CONTACT FORM MEDIA QUERRIES*/
 /* Nav Section */
 
 a {
@@ -41,8 +121,13 @@ a {
   border-radius: 0;
 }
 
-.btn-primary {
-  background: var(--primary-color);
+.btn-primary, .btn-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  opacity: 0.8;
 }
 
 .dark-gray {
@@ -62,7 +147,7 @@ a {
 /* Section - Hero */
 
 #hero {
-  background: url('../img/hero.jpg') no-repeat center center/cover;
+  background: url('../img/hero.jpeg') no-repeat center center/cover;
   background-attachment: fixed;
 }
 
@@ -127,72 +212,6 @@ a {
 }
 
 
-/*Contact Page*/
-/*Main area*/
-.main {
-  padding-top: 40px;
-}
-
-.main .main-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 106px;
-}
-/*Contact form*/
-label {
-  color: #A2A2A2;
-  font-family: Source Sans Pro;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-form input {
-  min-width: 100%;
-  border: none;
-  background-color: var(--dark-color);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.67);
-}
-
-.my-form {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-form{
-  padding-top: 30px;
-}
-
-.form-group {
-  margin-bottom: 30px;
-}
-
-/*company area*/
-.company {
-  padding-top: 65px;
-  padding-bottom: 65px;
-}
-
-.company h6 {
-  padding: 0;
-  margin: 0;
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 25px;
-}
-
-.company p {
-  padding: 0;
-  margin: 0;
-  font-family: Source Sans Pro;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 23px;
-}
-
 /* Section - Footer */
 
 footer nav {
@@ -203,9 +222,13 @@ footer nav.navbar {
   padding: .5rem 0;
 }
 
-.social-media i {
+.social-media a {
   padding-left: 1.5rem;
   color: #fff;
+}
+
+.social-media a:hover {
+  color: var(--primary-color);
 }
 
 /* Responsiveness */
@@ -231,9 +254,26 @@ footer nav.navbar {
     flex-direction: column;
   }
 
-  footer div div:last-child {
+  footer nav .navbar-brand {
+    margin-bottom: 2rem;
+  }
+
+  footer div div:last-child, footer nav {
     flex-direction: column;
     text-align: center;
   }
-}
 
+  /*CONTACT FORM RESPONSIVENESS*/
+  @media (max-width:1000px) {
+    .main .main-section {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+
+ @media (max-width:768px) {
+   .main .main-section {
+     display: grid;
+     grid-template-columns: 1fr;
+   }
+ }
