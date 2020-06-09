@@ -1,3 +1,32 @@
 .facility-body {
-  background-color: var(--dark-color);
+    background-color: var(--dark-color);
+}
+
+/* Nav Section */
+#facility-navbar {
+    margin: 2rem;
+}
+
+.nav-item {
+    margin-right: 2.3rem;
+    color: fff;
+}
+.active {
+    color: #514525 !important;
+}
+
+/* intro section */
+.intro-div {
+    margin: 7% 20%;
+    text-align: center;
+    width: 60%;
+}
+
+.intro-heading {
+    font-family: 'Playfair Display';
+    font-size: 2.5rem;
+
+}
+.intro-text {
+    color: rgba(255, 255, 255, 0.7);
 }
